@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Item">
+ 
+ <!-- springboard테이블에서 SQL작성(1.글목록보기) -->
+<select id="list"  resultType="Item">
+     select * from package order by pack_date desc
+</select>
+ 
+ 
+
+</mapper>
+
+
+
